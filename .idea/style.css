@@ -54,6 +54,7 @@ section {
 .produto {
   width: 220px;
   height: 380px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -64,7 +65,15 @@ section {
   text-align: center;
 }
 
+
 .produto img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.pagina-carrinho .produto img {
   width: 100%;
   height: 300px;
   object-fit: cover;
@@ -72,12 +81,15 @@ section {
 }
 
 .produto h3 {
-  font-size: 16px;
-  margin: 10px 0 5px;
+  font-size: 14px;
+  height: 40px;
+  overflow: hidden;
 }
 
 .descricao {
-  font-size: 14px;
+  font-size: 13px;
+  height: 60px;
+  overflow: hidden;
   color: #555;
   margin: 8px 0;
 }
